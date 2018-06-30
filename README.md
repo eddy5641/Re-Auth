@@ -11,7 +11,7 @@ This may work, but is the old auth method (Ex. used in LegendaryClient). A lot o
 
 
 Riot now employs RSO-AUTH which is a newer auth method
-AuthenticationCredentials should now look like
+AuthenticationCredentials should now look like (This is code dirrectly from IcyWind)
 
 ![img](https://i.imgur.com/29uIpbQ.png)
 
