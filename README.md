@@ -15,4 +15,6 @@ AuthenticationCredentials should now look like (This is code dirrectly from IcyW
 
 ![img](https://i.imgur.com/29uIpbQ.png)
 
-The usage of the older authentication method may tell riot of the usage of a 3rd party utility. This tool uses only RSO auth, as that utility is able to return if the password is incorrect or correct.
+The usage of the older authentication method may tell riot of the usage of a 3rd party utility. This tool uses only auth (Required for RSO-Auth), as that utility is able to return if the password is incorrect or correct.
+
+For RTMPS proper RSO Auth will be used
