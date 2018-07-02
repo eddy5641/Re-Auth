@@ -1,7 +1,25 @@
 # Re-Auth
-Authentication tool for league
+A powerful yet simple authentication tool for league
 
-Why use this tool?
+# Features
+## Supports many regions
+![img](https://i.imgur.com/PTxULMt.png)
+Re:Auth is able to support many regions, including PBE
+Due to the design of Re:Auth, Re:Auth does not need to connect to RTMPS, making it more compatible from patch to patch
+
+## Account data gathering
+![img](https://i.imgur.com/PTxULMt.png)
+Re:Auth is now able to get basic data on IP, RP, Champions, and Rune pages
+
+## Built in proxy (HTTPS)
+![img](https://i.imgur.com/907poKi.png)
+Import a list of proxies to use with Re:Auth. Re:Auth will automatically do a basic test and allows you to easily switch between proxies
+
+## Configurable 
+![img](https://i.imgur.com/rH5mEnN.png)
+Sometimes you just need to get certain stats. You can disable features of Re:Auth
+
+# Why use this tool?
 
 Every other tool uses old auth. Here is an example of another Auth tool for league. Notice how it passes the password dirrectly in AuthenticationCredentials. 
 
