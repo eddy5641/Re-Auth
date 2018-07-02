@@ -12,11 +12,11 @@ Due to the design of Re:Auth, Re:Auth does not need to connect to RTMPS, making 
 Re:Auth is now able to get basic data on IP, RP, Champions, and Rune pages
 
 ## Built in proxy (HTTPS)
-![img](https://i.imgur.com/907poKi.png)
+![img](https://i.imgur.com/907poKi.png?1)
 Import a list of proxies to use with Re:Auth. Re:Auth will automatically do a basic test and allows you to easily switch between proxies
 
 ## Configurable 
-![img](https://i.imgur.com/rH5mEnN.png)
+![img](https://i.imgur.com/rH5mEnN.png?1)
 Sometimes you just need to get certain stats. You can disable features of Re:Auth
 
 # Why use this tool?
