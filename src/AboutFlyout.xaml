@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ReAuth.AboutFlyout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="300">
+    <Grid>
+        <Label Content="About" FontSize="20" Height="40" Margin="0,0,0,415" VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Re:Auth by eddy5641" Margin="10,35,0,390" VerticalContentAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Version v2.0" VerticalContentAlignment="Top" HorizontalAlignment="Right" Margin="0,35,10,390"/>
+        <Button Content="Github" HorizontalAlignment="Left" Margin="160,345,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button Content="Updates" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Width="130" Click="Update_Click"/>
+        <Button Content="Donate" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Width="280" Click="Donate_Click"/>
+        <Label Content="This program uses code from IcyWind under a &#xD;&#xA;special license but is not part of the IcyWind&#xD;&#xA;Project&#xD;&#xA;&#xD;&#xA;This program uses the following Libraries:&#xD;&#xA;MahApps.Metro&#xD;&#xA;Costura&#xD;&#xA;ControlzEx&#xD;&#xA;Newtonsoft.Json (json.net)&#xD;&#xA;YamlDotNet&#xD;&#xA;zlib.net&#xD;&#xA;&#xD;&#xA;You can view the licenses included" Margin="10,65,0,169" VerticalContentAlignment="Top" HorizontalAlignment="Left" Width="280"/>
+        <Button Content="View Licenses" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Width="280" Click="ButtonBase_OnClick"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,66 @@
+﻿<mah:MetroWindow x:Class="ReAuth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 xmlns:reAuth="clr-namespace:ReAuth"
+                 mc:Ignorable="d"
+        Icon="if_key_42264.ico" TitleCharacterCasing="Normal"
+        Title=" Re:Auth v1.5" Height="500" Width="800" ResizeMode="CanMinimize" Closed="MainWindow_OnClosed">
+
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button Content="Help" x:Name="Help" Click="Help_OnClick"/>
+            <Button Content="About" x:Name="About" Click="About_OnClick"/>
+            <Button Content="Proxy" x:Name="Proxy" Click="Proxy_OnClick"/>
+            <Button Content="Settings" x:Name="Settings" Click="Settings_OnClick"/>
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+
+    <mah:MetroWindow.Flyouts>
+        <mah:FlyoutsControl>
+            <mah:Flyout x:Name="HelpFlyout" Header="Help" Position="Right" Width="400">
+                <reAuth:HelpFlyout HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Width="400" Height="450"/>
+            </mah:Flyout>
+            <mah:Flyout x:Name="SettingFlyout" Header="Settings" Position="Right" Width="300">
+                <reAuth:SettingsView x:Name="SettingsView" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Width="300" Height="450"/>
+            </mah:Flyout>
+            <mah:Flyout x:Name="ProxyFlyout" Header="Proxy" Position="Right" Width="400">
+                <reAuth:ProxyFlyout x:Name="ProxyView" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Width="400" Height="450"/>
+            </mah:Flyout>
+            <mah:Flyout x:Name="AboutFlyout" Header="About" Position="Right" Width="300">
+                <reAuth:AboutFlyout x:Name="AboutView" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Width="300" Height="450"/>
+            </mah:Flyout>
+        </mah:FlyoutsControl>
+    </mah:MetroWindow.Flyouts>
+
+    <Grid>
+        <DataGrid x:Name="AccountGrid" HorizontalAlignment="Stretch" Height="429" VerticalAlignment="Top"  Grid.Row="0" 
+                  CanUserAddRows="True" CanUserDeleteRows="True" AutoGenerateColumns="False" ItemsSource="{Binding MainWindow.Accounts, NotifyOnSourceUpdated=True}" >
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource MetroDataGridColumnHeader}">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="10"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Username}" Header="Username" IsReadOnly="False" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Password" Binding="{Binding Password}" Header="Password" IsReadOnly="False" Visibility="Collapsed"  Width="150"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="HiddenPassword" Binding="{Binding HiddenPassword}" Header="Hidden Password" IsReadOnly="False" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Region}" Header="Region" IsReadOnly="False" Width="70"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Verified}" Header="Verified" IsReadOnly="False" Width="70"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="IPHeader" Binding="{Binding IP}" Visibility="Collapsed" Header="IP" IsReadOnly="True" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="RPHeader" Binding="{Binding RP}" Visibility="Collapsed" Header="RP" IsReadOnly="True" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="ChampsHeader" Binding="{Binding Champs}" Visibility="Collapsed" Header="Champs" IsReadOnly="True" Width="75"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="RunesHeader" Binding="{Binding Runes}" Visibility="Collapsed" Header="Runes" IsReadOnly="True" Width="75"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="VerifyButton" Content="Verify Accounts" Click="ButtonBase_OnClick" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="171"/>
+        <Button Content="Add Accounts" Click="ButtonBase_OnClick2" HorizontalAlignment="Right" Margin="0,0,186,10" VerticalAlignment="Bottom" Width="125"/>
+        <Button Content="Export" Click="ButtonBase_OnClick3" HorizontalAlignment="Right" Margin="0,0,316,10" VerticalAlignment="Bottom" Width="125"/>
+        <Label x:Name="CheckedLabel" VerticalContentAlignment="Center" Content="Not checking" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="42" Width="348" Margin="10,0,0,0"/>
+
+    </Grid>
+</mah:MetroWindow>
+

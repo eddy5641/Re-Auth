@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="ReAuth.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="420" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Settings" FontSize="20" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="0,0,0,375"/>
+        <ListBox HorizontalAlignment="Stretch" VerticalContentAlignment="Top" Height="375" VerticalAlignment="Top" Width="300" Margin="0,45,0,0">
+            <mah:ToggleSwitch x:Name="CheckUpdates" IsEnabled="False" IsChecked="True" Header="Check For Updates" Height="67" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="PasswordSwitch" Height="67" Header="Show Passwords" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Click="PasswordSwitch_OnClick" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="ProxyList" Click="ProxyList_OnClick" Header="Use Proxy List" Height="67" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="StoreAPI" Header="Enable Store API" Height="67" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0" Click="StoreAPI_OnClick"/>
+            <mah:ToggleSwitch x:Name="InvAPI" Header="Enable Inventory API" Height="67" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0" Click="InvAPI_OnClick"/>
+            <mah:ToggleSwitch x:Name="AdvAPI" IsEnabled="False" Click="AdvAPI_OnClick" Header="Enable Advanced API" Height="67" OnLabel="Yes" FontSize="12" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="RSOAUTH" Header="Force Full RSO Auth" Height="67" OnLabel="Yes" FontSize="12" IsEnabled="False" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="RTMPSAPI" Header="Allow RTMPS API" Height="67" OnLabel="Yes" FontSize="12" IsEnabled="False" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+            <mah:ToggleSwitch x:Name="ScrapeAPI" Header="Allow Data Scrape" Height="67" OnLabel="Yes" FontSize="12" IsEnabled="False" VerticalContentAlignment="Top" HorizontalAlignment="Stretch" Margin="10,0,10,0"/>
+        </ListBox>
+    </Grid>
+</UserControl>
