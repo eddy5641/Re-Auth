@@ -1,21 +1,27 @@
-# Re-Auth v2
-The next generation in account checkers
+# Re:Auth v2
+## The next generation in account checkers
 
-# Features
+# What is different
+Re:Auth using a new foundation for it's code base. A lot of custom code was made for Re:Auth for this launch.
+
+# Pro Features (v2)
 - [x] Support for User:Password
 - [x] Support for User:Password:Region
 - [x] Support for User:Password:Region:Verified
 - [x] Check more than one region at one time
-- [x] Fast
-- [x] Proxy support (Https)
-- [ ] Support for proxies with auth
+- [x] Super fast, with multi-threading
+- [x] Proxy support with https
+- [x] Proxy support with Socks (untested)
+- [x] Support for proxies with auth (untested)
 - [x] BE RP Level Rank Last-Play
-- [ ] Honor level
-- [ ] Tokens + Champion Shards + Skin Shards + OE + Champion Mastery
+- [x] Refunds
+- [ ] Email testing
+- [x] Honor level
+- [x] Tokens + Champion Shards + Skin Shards + OE + Champion Mastery
 - [x] List Champions and Skins
-- [ ] Champions -> BE | Skins -> RP
-- [ ] Account worth est
+- [x] Champions -> BE | Skins -> RP
 - [x] Custom Export
+- [ ] Account worth est
 
 ## Supports many regions
 ![img](https://i.imgur.com/PTxULMt.png)
