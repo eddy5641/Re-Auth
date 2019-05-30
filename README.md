@@ -10,10 +10,11 @@ The next generation in account checkers
 - [x] Proxy support (Https)
 - [ ] Support for proxies with auth
 - [x] BE RP Level Rank Last-Play
+- [ ] Honor level
+- [ ] Tokens + Champion Shards + Skin Shards + OE + Champion Mastery
 - [x] List Champions and Skins
 - [ ] Champions -> BE | Skins -> RP
 - [ ] Account worth est
-- [ ] Token + Champion Mastery
 - [x] Custom Export
 
 ## Supports many regions
