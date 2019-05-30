@@ -1,7 +1,21 @@
-# Re-Auth
-A powerful yet simple authentication tool for league
+# Re-Auth v2
+The next generation in account checkers
 
 # Features
+[x] Support for User:Password
+[x] Support for User:Password:Region
+[x] Support for User:Password:Region:Verified
+[x] Check more than one region at one time
+[x] Fast
+[x] Proxy support (Https)
+[ ] Support for proxies with auth
+[x] BE RP Level Rank Last-Play
+[x] List Champions and Skins
+[ ] Champions -> BE | Skins -> RP
+[ ] Account worth est
+[ ] Token + Champion Mastery
+[x] Custom Export
+
 ## Supports many regions
 ![img](https://i.imgur.com/PTxULMt.png)
 Re:Auth is able to support many regions, including PBE
